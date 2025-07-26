@@ -1,24 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Download FCanoma Extension</title>
-  </head>
-  <body style="text-align:center; margin-top: 50px; font-family: sans-serif;">
-    <h1>Download the FCanoma Chrome Extension</h1>
-    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download FCanoma Extension</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #181a20;
+      color: #f3f3f3;
+    }
+    .container {
+      background: rgba(24, 26, 32, 0.93);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border-radius: 24px;
+      padding: 48px 32px 32px 32px;
+      margin-top: 60px;
+      max-width: 420px;
+      width: 90vw;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+      color: #ff3c6a;
+      text-shadow: 0 2px 8px #0008;
+    }
+    .download-btn {
+      font-size: 1.1rem;
+      padding: 14px 32px;
+      margin: 28px 0 36px 0;
+      background: linear-gradient(90deg,#ff3c6a 0%,#ffb347 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px #0002;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: linear-gradient(90deg,#ffb347 0%,#ff3c6a 100%);
+    }
+    .instructions {
+      margin: 36px 0 28px 0;
+      text-align: left;
+      line-height: 2.1;
+      font-size: 1.07rem;
+      color: #f3f3f3;
+    }
+    .instructions b {
+      color: #ffb347;
+      font-weight: 700;
+    }
+    .instructions code {
+      background: #23242a;
+      color: #ffb347;
+      padding: 2px 8px;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .footer {
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 1.03rem;
+      letter-spacing: 0.2px;
+      text-align: center;
+    }
+    .footer a {
+      color: #ffb347;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    .footer a:hover {
+      color: #ff3c6a;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 8px 20px 8px;
+        margin-top: 180px;
+      }
+      body {
+        background-size: 220px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Anoma Auto Fitcoins Collector</h1>
     <a href="/FCanoma.zip" download>
-      <button style="font-size: 18px; padding: 10px 20px; margin-top: 20px;">Download Extension (.zip)</button>
+      <button class="download-btn">Download Extension (.zip)</button>
     </a>
-
-    <p style="margin-top: 30px;">
-      After downloading:<br>
-      1. visit your downloads folder in pc and Extract the file<br>
-      2. Go to <code>chrome://extensions</code><br>
-      3. Enable <b>Developer Mode and Refresh</b><br>
-      4. Click <b>“Load Unpacked”</b><br>
-      5. Select the unzipped <b>FCanoma</b> folder
-    </p>
-
-    <p style="margin-top: 50px; color: gray;">.</p>
-  </body>
+    <div class="instructions">
+      <b>After downloading:</b><br>
+      <b>1.</b> Visit your downloads folder and <b>Extract</b> the file.<br>
+      <b>2.</b> Go to <code>chrome://extensions</code><br>
+      <b>3.</b> Enable <b>Developer Mode</b> and <b>Refresh</b>.<br>
+      <b>4.</b> Click <b>“Load Unpacked”</b>.<br>
+      <b>5.</b> Select the unzipped <b>FCanoma</b> folder.
+    </div>
+  </div>
+  <div class="footer">
+    Made with ❤️ by <a href="https://x.com/morsyxbt" target="_blank" rel="noopener">Morsyxbt</a>
+  </div>
+</body>
 </html>
